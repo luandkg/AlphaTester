@@ -13,9 +13,7 @@ public class MainTester  extends AlphaTester {
 	
 	public MainTester(String eNome) {
 		
-		System.out.println("  ");
-		System.out.println("------------------------- TESTES -------------------------");
-		
+	
 		
 		TEST(eNome, "Global");
 		ASSERT_NE("O2", "O3");
@@ -43,19 +41,12 @@ public class MainTester  extends AlphaTester {
 		System.out.println("  ");
 		System.out.println("  ");
 
-		ANALISE();
+
+		TESTES();
 		
-		System.out.println("  ");
-		System.out.println("------------------------- RESUMO -------------------------");
-		System.out.println("  ");
 
 		RESUME();
 		
-		System.out.println("  ");
-		System.out.println("------------------------- QUANTITATIVO -------------------------");
-		System.out.println("  ");
-		
-		//TESTES();
 
 		ESTATISTICAS();
 	}

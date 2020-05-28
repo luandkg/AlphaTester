@@ -27,6 +27,14 @@ public class AlphaTester {
 
 	}
 
+	public void TITLE(String eTitulo) {
+		
+		System.out.println("  ");
+		System.out.println("------------------------- " + eTitulo + " -------------------------");
+		System.out.println("  ");
+
+	}
+	
 	public void TEST(String eGrupo, String eFuncao) {
 
 		mGrupo = eGrupo;
@@ -90,7 +98,9 @@ public class AlphaTester {
 
 	}
 
-	public void ANALISE() {
+	public void TESTES() {
+
+		TITLE("TESTES");
 
 		for (GrupoDeTeste eGDT : mGrupos) {
 
@@ -109,6 +119,8 @@ public class AlphaTester {
 
 	public void RESUME() {
 
+		TITLE("RESUMO");
+
 		for (GrupoDeTeste eGDT : mGrupos) {
 
 			System.out.println(eGDT.getNameSpace() + " :: " + eGDT.getTestes() + " -> [" + eGDT.getAprovados() + " - "
@@ -118,8 +130,9 @@ public class AlphaTester {
 
 	}
 
-	public void TESTES() {
+	public void TESTES_LISTA() {
 
+		
 		int t = 0;
 
 		for (String eAssinatura : mTestes) {
@@ -137,6 +150,8 @@ public class AlphaTester {
 	}
 
 	public void ESTATISTICAS() {
+
+		TITLE("ESTATISTICAS");
 
 		int Total = 0;
 		int Aprovados = 0;
